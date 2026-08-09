@@ -1,0 +1,33 @@
+{
+  "name": "pr-size-labeler",
+  "version": "1.0.0",
+  "description": "A bot that labels pull requests as XS/S/M/L/XL based on lines changed and warns on oversized PRs.",
+  "main": "src/pr-size-labeler.js",
+  "type": "commonjs",
+  "bin": {
+    "pr-size-labeler": "src/pr-size-labeler.js"
+  },
+  "scripts": {
+    "start": "node src/pr-size-labeler.js",
+    "test": "node --test test/ || echo 'no tests yet \u2014 add some in test/'",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js --roadmap",
+    "setup": "bash scripts/setup.sh"
+  },
+  "keywords": [
+    "github",
+    "pull-request",
+    "bot",
+    "labeler",
+    "ci"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/pr-size-labeler.git"
+  },
+  "author": ""
+}
